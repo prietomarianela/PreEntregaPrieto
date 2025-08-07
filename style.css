@@ -1,0 +1,510 @@
+:root {
+  /* Paleta Principal */
+  --verde-hoja: #6b8e23;
+  --verde-oscuro: #2f4f2f;
+  --verde-suave: #a9cbb7;
+  --beige-claro: #f3efe0;
+  --marron-tierra: #8b5e3c;
+  --blanco-puro: #ffffff;
+  --negro-texto: #333333;
+
+  /* Funcionales */
+  --color-fondo-principal: var(--beige-claro);
+  --color-fondo-secundario: var(--verde-suave);
+  --color-acento: var(--verde-hoja);
+  --color-titulos: var(--verde-oscuro);
+  --color-texto: var(--negro-texto);
+  --color-borde: var(--marron-tierra);
+  --color-blanco: var (var(--blanco-puro));
+}
+
+/*  Fuente */
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Reset y tipografía general */
+.body-vivero {
+  font-family: "DM Serif Text", serif;
+  color: var(--color-texto);
+  background-color: var(--color-fondo-principal);
+  margin: 0;
+}
+
+/* Títulos generales */
+.index-titulo-vivero {
+  color: var(--color-titulos);
+  text-align: center;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+}
+
+/* Títulos de secciones específicas */
+.plantas-de-estacion h2.titulo-vivero,
+.categorias-de-productos h2.titulo-vivero,
+.info-medios-de-pago h2.titulo-vivero {
+  color: var(--color-titulos);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+/* Header y logo */
+header {
+  text-align: center;
+  padding: 20px;
+}
+.logo-vivero-verde {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Menú de navegación */
+.menu-navegacion {
+  background-color: var(--beige-claro);
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.menu-navegacion ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
+  justify-items: center;
+  list-style: none;
+  max-width: 600px;
+  padding: 0;
+  margin: 0 auto;
+}
+.menu-navegacion a {
+  text-decoration: none;
+  color: var(--verde-hoja);
+  font-weight: bold;
+}
+
+/* Sección envíos, medios de pago y seguridad */
+.info-medios-de-pago {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin: 2rem auto;
+  background-color: var(--verde-suave);
+  max-width: 1200px;
+  padding: 2rem;
+}
+.info-medios-de-pago article {
+  text-align: center;
+}
+.info-medios-de-pago img {
+  width: 100%;
+  max-width: 125px;
+  height: auto;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* Categorías de productos */
+.categorias-de-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin: 2rem auto;
+  background-color: var(--beige-claro);
+  max-width: 1200px;
+  padding: 2rem;
+}
+.categorias-de-productos article {
+  text-align: center;
+}
+
+.categorias-de-productos img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Sección de plantas de estación */
+.plantas-de-estacion {
+  padding: 2rem;
+  background-color: var(--color-fondo-secundario);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+.grid-plantas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+.grid-plantas article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
+  text-align: center;
+}
+.grid-plantas img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 0.5rem;
+  border-radius: 20px;
+}
+.imagen-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.plantas-de-estacion p {
+  color: var(--color-texto);
+  font-weight: bold;
+  margin-top: 0;
+}
+
+/* Carrusel */
+.carrusel-vivero {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+.carrusel-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem; /* espacio entre título y texto */
+}
+
+.titulo-carrusel {
+  font-family: "DM Serif Text", serif;
+  color: var(--color-titulos);
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.texto-carrusel {
+  font-family: "DM Serif Text", serif;
+  color: var(--color-acento);
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-acento);
+  color: var(--blanco-puro);
+  text-align: center;
+  padding: 1rem 0;
+}
+footer a {
+  text-decoration: none;
+  color: var(--blanco-puro);
+  margin: 0 0.5rem;
+}
+
+/* Página Tienda */
+
+.grid-tienda-vivero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 2rem auto;
+  background-color: var(--beige-claro);
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.grid-tienda-vivero img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 15px;
+}
+
+.grid-tienda-vivero p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-texto);
+}
+
+.grid-tienda-vivero article {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.grid-tienda-vivero article:hover {
+  transform: scale(1.05);
+}
+.grid-tienda-vivero button {
+  background-color: var(--verde-hoja);
+  color: var(--blanco-puro);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.grid-tienda-vivero button:hover {
+  background-color: var(--verde-oscuro);
+}
+
+.tienda-titulo-vivero {
+  text-align: center;
+  color: var(--color-titulos);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+
+
+/* Página Quienes Somos */
+
+.titulo-quienes-somos {
+  text-align: center;
+  color: var(--color-titulos);
+  font-size: 2rem;
+  margin: 1rem 0 2.5rem 0; /* aumenta el margen inferior */
+  border-radius: 10px;
+}
+
+.mosaico-envios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.mosaico-item {
+  position: relative;
+  border-radius: 10px;
+}
+
+.mosaico-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.mosaico-item:hover img {
+  transform: scale(1.05);
+}
+
+.mosaico-texto {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #222;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 90%;
+  pointer-events: none;
+}
+
+.imagenes-vivero {
+  text-align: center;
+  margin-top: 20px;
+}
+.imagenes-vivero img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: 0 0.5rem 1rem;
+}
+
+.titulo-carrusel-quienes-somos {
+  font-family: "DM Serif Text", serif;
+  color: var(--color-blanco);
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(85, 124, 74, 0.7);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+
+
+/* Página Envios */
+
+.titulos-envios {
+  text-align: center;
+  color: var(--color-titulos);
+  font-size: 2rem;
+  margin: 1rem 0 2rem 0; 
+  border-radius: 10px;
+}
+
+.parrafos-envios {
+   max-width: 800px;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.tabla-envios {
+  width: 100%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  background: var(--beige-claro);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.tabla-envios th, .tabla-envios td {
+  border: 1px solid var(--color-borde);
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.tabla-envios th {
+  background: var(--color-fondo-secundario);
+  color: var(--color-titulos);
+}
+
+.imagenes-envios-vivero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+    align-items: stretch;
+  margin-top: 1rem;
+}
+.imagenes-envios-vivero img {
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto 0.5rem;
+}
+
+.faq-envios {
+  max-width: 700px;
+  margin: 1.5rem auto;
+  padding-left: 1.2rem;
+  font-size: 1rem;
+}
+.faq-envios li {
+  margin-bottom: 0.7rem;
+}
+
+/* Página Contacto */
+
+.btn-contacto {
+  background: var(--color-acento, #557c4a);
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-contacto:hover {
+  background: #3e5c34;
+}
+.seccion-contacto {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: var(--beige-claro, #f8f8f3);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.seccion-contacto input,
+.seccion-contacto textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.seccion-contacto textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.mapa-contacto {
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.titulo-contacto {
+  text-align: center;
+  color: var(--color-titulos);
+  font-size: 2rem;
+  margin: 1rem 0 2rem 0; 
+  border-radius: 10px;
+}
+
+/*media querys*/
+@media (max-width: 900px) {
+  .grid-tienda-vivero {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .mosaico-envios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-tienda-vivero,
+  .mosaico-envios,
+  .imagenes-envios-vivero {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .grid-tienda-vivero img,
+  .imagenes-envios-vivero img {
+    width: 100px;
+    height: 100px;
+  }
+  .mosaico-item img {
+    height: 120px;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo de la pagina -->
+    <title>Contacto - Vivero Verde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barrio&family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="body-vivero">
+    <!-- Logo y nombre -->
+    <header>
+      <img
+        src="../img/vivero-verde.png"
+        alt="logo vivero verde"
+        class="logo-vivero-verde"
+      />
+
+      <h1 class="titulo-vivero">Vivero Verde</h1>
+      <p>Encontrá la planta perfecta para tu hogar.</p>
+
+      <!-- Menú de navegación -->
+      <nav class="menu-navegacion">
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="envios.html">Envios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="titulo-contacto">¡Preguntanos lo que quieras!</h2>
+
+    <div class="seccion-contacto">
+      <form>
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+          placeholder="Tu nombre"
+        />
+        <br /><br />
+        <!-- Email -->
+        <label for="mail">Mail:</label>
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          required
+          placeholder="tu@email.com"
+        />
+        <br /><br />
+        <!-- Mensaje -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          required
+          placeholder="Escribí tu consulta"
+        ></textarea>
+        <br /><br />
+        <!-- Botón de envío -->
+        <button type="submit" class="btn-contacto">Enviar</button>
+      </form>
+    </div>
+
+    <div class="mapa-contacto">
+      <h3 class="titulo-contacto">¿Dónde estamos?</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.123456789!2d-58.123456789!3d-34.567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb123456789%3A0xabcdef123456789!2sCaracas%201912%2C%20C1416%20CABA!5e0!3m2!1ses-419!2sar!4v1690000000000!5m2!1ses-419!2sar"
+        width="100%"
+        height="300"
+        style="border: 0; border-radius: 12px"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+
+    <!--Footer con información de derechos y contactos -->
+    <footer>
+      <p>Caracas 1912, C1416 CABA</p>
+      <p>Envíos a Capital Federal y Gran Buenos Aires</p>
+      <p>&copy; 2025 Vivero Verde. Todos los derechos reservados.</p>
+      <p>
+        <a href="https://wa.me/5491123456789" target="_blank">WhatsApp</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="mailto:contacto@viveroverde.com">Email</a>
+      </p>
+    </footer>
+  </body>
+</html>

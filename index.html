@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivero Verde</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+    crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" /> 
+  </head>
+  <body class="body-vivero">
+    <!-- Header: logo, título y menú de navegación -->
+    <header>
+      <img
+        src="img/vivero-verde.png"
+        alt="Logo de Vivero Verde"
+        class="logo-vivero-verde"
+      />
+        <h1 class="index-titulo-vivero">Vivero Verde</h1>
+        <p class="parrafo-vivero">Encontrá la planta perfecta para tu hogar.</p>
+      <!-- Menú de navegación -->
+      <nav class="menu-navegacion">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="./pages/tienda.html">Tienda</a></li>
+          <li><a href="./pages/quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="./pages/envios.html">Envios</a></li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <!-- Contenido principal -->
+    <main>
+      <!-- Información de envíos y métodos de pago -->
+      <section class="info-medios-de-pago">
+        <article>
+          <img src="img/logo-envios2.jpg" alt="Logo de envíos" />
+          <h2 class="titulo-vivero">Envíos a CABA</h2>
+          <p class="parrafo-vivero">Y a todo GBA. ¡Consultá con tu vendedor!</p>
+        </article>
+        <article>
+          <img src="img/logo-pagos.png" alt="Logo de métodos de pago" />
+          <h2 class="titulo-vivero">Paga como quieras</h2>
+          <p class="parrafo-vivero">
+            Vos elegís: pagá con tarjeta, efectivo o transferencia bancaria.
+          </p>
+        </article>
+        <article>
+          <img src="img/logo-candado.png" alt="Logo de seguridad" />
+          <h2 class="titulo-vivero">Comprá seguro</h2>
+          <p class="parrafo-vivero">Siempre protegemos tus datos.</p>
+        </article>
+      </section>
+
+      <!-- Categorías de productos -->
+      <section class="categorias-de-productos">
+        <article>
+          <img src="img/logo-interior.png" alt="Plantas de interior" class="imagen-hover"/>
+          <h2 class="titulo-vivero">De interior</h2>
+        </article>
+        <article>
+          <img src="img/logo-exterior.png" 
+          alt="Plantas de exterior" 
+          class="imagen-hover"/>
+          <h2 class="titulo-vivero">De exterior</h2>
+        </article>
+        <article>
+          <img src="img/logo-maceta.png" 
+          alt="Macetería" 
+          class="imagen-hover" />
+          <h2 class="titulo-vivero">Macetería</h2>
+        </article>
+        <article>
+          <img src="img/logo-sustrato.png" alt="Sustratos" class="imagen-hover" />
+          <h2 class="titulo-vivero">Sustratos</h2>
+        </article>
+      </section>
+
+      <!-- Plantas de estación -->
+      <section class="plantas-de-estacion">
+        <h2 class="titulo-vivero">Plantas de estación</h2>
+        <div class="grid-plantas">
+          <article>
+            <h3 class="titulo-vivero">Planta Conejito</h3>
+            <img
+              src="img/planta-conejito.png"
+              alt="Planta Conejito"
+              class="imagen-hover"
+            />
+            <p class="parrafo-vivero">$35.999</p>
+          </article>
+          <article>
+            <h3 class="titulo-vivero">Planta Drassena Robusta</h3>
+            <img
+              src="img/planta-drassena-robusta.png"
+              alt="Planta Drassena Robusta"
+              class="imagen-hover"
+            />
+            <p class="parrafo-vivero">$40.999</p>
+          </article>
+          <article>
+            <h3 class="titulo-vivero">Planta Marantha Ctenanthe</h3>
+            <img
+              src="img/planta-marantha-ctenanthe.png"
+              alt="Planta Marantha Ctenanthe"
+              class="imagen-hover"
+            />
+            <p class="parrafo-vivero">$58.999</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Carrusel -->
+      <section class="carrusel-vivero">
+        <div id="carouselVivero" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/naturaleza-hogar.jpg" class="carrusel-img" alt="Plantas 1">
+              <div class="carousel-caption">
+                <h5 class="titulo-carrusel">La naturaleza en tu hogar</h5>
+                <p class="texto-carrusel">Plantas de estación seleccionadas para vos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/plantas-interior-exterior.jpg" class="carrusel-img" alt="Plantas 2">
+              <div class="carousel-caption">
+                <h5 class="titulo-carrusel">Decorá con verde</h5>
+                <p class="texto-carrusel">Interior y exterior, siempre con estilo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/regala-plantas.jpg" class="carrusel-img" alt="Plantas 3">
+              <div class="carousel-caption">
+                <h5 class="titulo-carrusel">Regalá vida</h5>
+                <p class="texto-carrusel">Sorpresas naturales para quienes querés</p>
+              </div>
+            </div>
+          </div>
+          <!-- Botones de control -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselVivero" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselVivero" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer con información de contacto -->
+    <footer>
+      <p class="parrafo-vivero">Caracas 1912, C1416 CABA</p>
+      <p class="parrafo-vivero">Envíos a Capital Federal y Gran Buenos Aires</p>
+      <p class="parrafo-vivero">&copy; 2025 Vivero Verde. Todos los derechos reservados.</p>
+      <p class="parrafo-vivero">
+        <a
+          href="https://wa.me/5491123456789"
+          target="_blank"
+          rel="noopener noreferrer"
+          >WhatsApp</a
+        >
+        |
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram</a
+        >
+        |
+        <a href="mailto:contacto@viveroverde.com">Email</a>
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
