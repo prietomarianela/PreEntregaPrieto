@@ -481,30 +481,5 @@ footer a {
   border-radius: 10px;
 }
 
-/*media querys*/
-@media (max-width: 900px) {
-  .grid-tienda-vivero {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  .mosaico-envios {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 600px) {
-  .grid-tienda-vivero,
-  .mosaico-envios,
-  .imagenes-envios-vivero {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-  .grid-tienda-vivero img,
-  .imagenes-envios-vivero img {
-    width: 100px;
-    height: 100px;
-  }
-  .mosaico-item img {
-    height: 120px;
-  }
 }
