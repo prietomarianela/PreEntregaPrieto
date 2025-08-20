@@ -1,5 +1,13 @@
-@charset "UTF-8";
-/* Paleta Principal */ /* Variables */
+
+  /* Paleta Principal */ /* Variables */
+  $verde-hoja: #6b8e23;
+  $verde-oscuro: #2f4f2f;
+  $verde-suave: #a9cbb7;
+  $beige-claro: #f3efe0;
+  $marron-tierra: #8b5e3c;
+  $blanco-puro: #ffffff;
+  $negro-texto: #333333;
+
 /*  Fuente */
 .dm-serif-text-regular {
   font-family: "DM Serif Text", serif;
@@ -16,15 +24,15 @@
 /* Reset y tipografía general */
 .body-vivero {
   font-family: "DM Serif Text", serif !important;
-  color: #333333;
-  background-color: #f3efe0;
+  color: $negro-texto;
+  background-color: $beige-claro;
   margin: 0;
 }
 
 /* Títulos generales */
 .index-titulo-vivero {
-  font-family: "DM Serif Text", serif !important;
-  color: #2f4f2f;
+    font-family: "DM Serif Text", serif !important;
+  color: $verde-oscuro;
   text-align: center;
   margin: 0.5rem 0;
   border-radius: 10px;
@@ -34,8 +42,8 @@
 .plantas-de-estacion h2.titulo-vivero,
 .categorias-de-productos h2.titulo-vivero,
 .info-medios-de-pago h2.titulo-vivero {
-  font-family: "DM Serif Text", serif;
-  color: #2f4f2f;
+font-family: "DM Serif Text", serif;
+  color: $verde-oscuro;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -47,7 +55,6 @@ header {
   text-align: center;
   padding: 20px;
 }
-
 .logo-vivero-verde {
   width: 150px;
   max-width: 100%;
@@ -59,11 +66,10 @@ header {
 
 /* Menú de navegación */
 .menu-navegacion {
-  background-color: #f3efe0;
+  background-color: $beige-claro;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
 .menu-navegacion ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -74,10 +80,9 @@ header {
   padding: 0;
   margin: 0 auto;
 }
-
 .menu-navegacion a {
   text-decoration: none;
-  color: #6b8e23;
+  color: $verde-hoja;
   font-weight: bold;
 }
 
@@ -87,15 +92,13 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
   margin: 2rem auto;
-  background-color: #a9cbb7;
+  background-color: $verde-suave;
   max-width: 1200px;
   padding: 2rem;
 }
-
 .info-medios-de-pago article {
   text-align: center;
 }
-
 .info-medios-de-pago img {
   width: 100%;
   max-width: 125px;
@@ -111,11 +114,10 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
   margin: 2rem auto;
-  background-color: #f3efe0;
+  background-color: $beige-claro;
   max-width: 1200px;
   padding: 2rem;
 }
-
 .categorias-de-productos article {
   text-align: center;
 }
@@ -132,18 +134,16 @@ header {
 /* Sección de plantas de estación */
 .plantas-de-estacion {
   padding: 2rem;
-  background-color: #a9cbb7;
+  background-color: $verde-suave;
   max-width: 1200px;
   margin: 2rem auto;
 }
-
 .grid-plantas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   align-items: stretch;
 }
-
 .grid-plantas article {
   display: flex;
   flex-direction: column;
@@ -151,7 +151,6 @@ header {
   min-height: 350px;
   text-align: center;
 }
-
 .grid-plantas img {
   width: 180px;
   height: 180px;
@@ -160,15 +159,13 @@ header {
   margin: 0 auto 0.5rem;
   border-radius: 20px;
 }
-
 .imagen-hover:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-
 .plantas-de-estacion p {
-  color: #333333;
+  color: $negro-texto;
   font-weight: bold;
   margin-top: 0;
 }
@@ -178,7 +175,6 @@ header {
   max-width: 1200px;
   margin: 2rem auto;
 }
-
 .carrusel-img {
   width: 100%;
   max-height: 400px;
@@ -195,7 +191,7 @@ header {
 
 .titulo-carrusel {
   font-family: "DM Serif Text", serif;
-  color: #2f4f2f;
+  color: $verde-oscuro;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.7);
@@ -206,7 +202,7 @@ header {
 
 .texto-carrusel {
   font-family: "DM Serif Text", serif;
-  color: #6b8e23;
+  color: $verde-hoja;
   font-size: 1.2rem;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 0.25rem 0.5rem;
@@ -216,25 +212,25 @@ header {
 
 /* Footer */
 footer {
-  background-color: #6b8e23;
-  color: #ffffff;
+  background-color: $verde-hoja;
+  color: $blanco-puro;
   text-align: center;
   padding: 1rem 0;
 }
-
 footer a {
   text-decoration: none;
-  color: #ffffff;
+  color: $blanco-puro;
   margin: 0 0.5rem;
 }
 
 /* Página Tienda */
+
 .grid-tienda-vivero {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   margin: 2rem auto;
-  background-color: #f3efe0;
+  background-color: $beige-claro;
   max-width: 1200px;
   padding: 2rem;
 }
@@ -251,7 +247,7 @@ footer a {
 .grid-tienda-vivero p {
   text-align: center;
   font-size: 1.2rem;
-  color: #333333;
+  color: $negro-texto;
 }
 
 .grid-tienda-vivero article {
@@ -261,14 +257,12 @@ footer a {
   transition: transform 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .grid-tienda-vivero article:hover {
   transform: scale(1.05);
 }
-
 .grid-tienda-vivero button {
-  background-color: #6b8e23;
-  color: #ffffff;
+  background-color: $verde-hoja;
+  color: $blanco-puro;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -277,21 +271,24 @@ footer a {
 }
 
 .grid-tienda-vivero button:hover {
-  background-color: #2f4f2f;
+  background-color: $verde-oscuro;
 }
 
 .tienda-titulo-vivero {
   text-align: center;
-  color: #2f4f2f;
+  color: $verde-oscuro;
   font-size: 2rem;
   margin-bottom: 2rem;
   border-radius: 10px;
 }
 
+
+
 /* Página Quienes Somos */
+
 .titulo-quienes-somos {
   text-align: center;
-  color: #2f4f2f;
+  color: $verde-oscuro;
   font-size: 2rem;
   margin: 1rem 0 2.5rem 0; /* aumenta el margen inferior */
   border-radius: 10px;
@@ -342,7 +339,6 @@ footer a {
   text-align: center;
   margin-top: 20px;
 }
-
 .imagenes-vivero img {
   max-width: 100%;
   height: auto;
@@ -352,7 +348,7 @@ footer a {
 
 .titulo-carrusel-quienes-somos {
   font-family: "DM Serif Text", serif;
-  color: #ffffff;
+  color: $blanco-puro;
   font-size: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: rgba(85, 124, 74, 0.7);
@@ -360,17 +356,20 @@ footer a {
   border-radius: 5px;
 }
 
+
+
 /* Página Envios */
+
 .titulos-envios {
   text-align: center;
-  color: #2f4f2f;
+  color: $verde-oscuro;
   font-size: 2rem;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 2rem 0; 
   border-radius: 10px;
 }
 
 .parrafos-envios {
-  max-width: 800px;
+   max-width: 800px;
   margin: 2rem auto;
   padding: 0.5rem;
   border-radius: 10px;
@@ -384,20 +383,18 @@ footer a {
   max-width: 500px;
   margin: 1.5rem auto;
   border-collapse: collapse;
-  background: #f3efe0;
+  background: $beige-claro;
   border-radius: 10px;
   font-size: 1rem;
 }
-
 .tabla-envios th, .tabla-envios td {
-  border: 1px solid #8b5e3c;
+  border: 1px solid $marron-tierra;
   padding: 0.5rem 1rem;
   text-align: center;
 }
-
 .tabla-envios th {
-  background: #a9cbb7;
-  color: #2f4f2f;
+  background: $verde-suave;
+  color: $verde-oscuro;
 }
 
 .imagenes-envios-vivero {
@@ -405,10 +402,9 @@ footer a {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   justify-items: center;
-  align-items: stretch;
+    align-items: stretch;
   margin-top: 1rem;
 }
-
 .imagenes-envios-vivero img {
   max-width: 250px;
   height: auto;
@@ -422,14 +418,14 @@ footer a {
   padding-left: 1.2rem;
   font-size: 1rem;
 }
-
 .faq-envios li {
   margin-bottom: 0.7rem;
 }
 
 /* Página Contacto */
+
 .btn-contacto {
-  background: #6b8e23, #557c4a;
+  background: $verde-hoja, #557c4a;
   color: #fff;
   padding: 0.7rem 2rem;
   border: none;
@@ -438,20 +434,17 @@ footer a {
   cursor: pointer;
   transition: background 0.2s;
 }
-
 .btn-contacto:hover {
   background: #3e5c34;
 }
-
 .seccion-contacto {
   max-width: 500px;
   margin: 2rem auto;
-  background: #f3efe0, #f8f8f3;
+  background: $beige-claro, #f8f8f3;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
-
 .seccion-contacto input,
 .seccion-contacto textarea {
   width: 100%;
@@ -462,12 +455,10 @@ footer a {
   font-size: 1rem;
   box-sizing: border-box;
 }
-
 .seccion-contacto textarea {
   min-height: 80px;
   resize: vertical;
 }
-
 .mapa-contacto {
   max-width: 700px;
   margin: 2rem auto;
@@ -476,9 +467,9 @@ footer a {
 
 .titulo-contacto {
   text-align: center;
-  color: #2f4f2f;
+  color: $verde-oscuro;
   font-size: 2rem;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 2rem 0; 
   border-radius: 10px;
 }
 
@@ -492,6 +483,7 @@ footer a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 600px) {
   .grid-tienda-vivero,
   .mosaico-envios,
@@ -508,5 +500,3 @@ footer a {
     height: 120px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
