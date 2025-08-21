@@ -1,48 +1,27 @@
 @charset "UTF-8";
-/* Paleta Principal */ /* Variables */
-/*  Fuente */
-.dm-serif-text-regular {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.dm-serif-text-regular-italic {
-  font-family: "DM Serif Text", serif !important;
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* Reset y tipografía general */
-.body-vivero {
-  font-family: "DM Serif Text", serif !important;
-  color: #333333;
-  background-color: #f3efe0;
-  margin: 0;
-}
-
-/* Títulos generales */
-.index-titulo-vivero {
-  font-family: "DM Serif Text", serif !important;
-  color: #2f4f2f;
-  text-align: center;
-  margin: 0.5rem 0;
-  border-radius: 10px;
-}
-
-/* Títulos de secciones específicas */
-.plantas-de-estacion h2.titulo-vivero,
+.index-titulo-vivero, .plantas-de-estacion h2.titulo-vivero,
 .categorias-de-productos h2.titulo-vivero,
 .info-medios-de-pago h2.titulo-vivero {
-  font-family: "DM Serif Text", serif;
+  font-family: "DM Serif Text", serif !important;
   color: #2f4f2f;
-  font-size: 2rem;
   text-align: center;
-  margin-bottom: 2rem;
   border-radius: 10px;
 }
 
-/* Header y logo */
+.info-medios-de-pago img, .logo-vivero-verde {
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.categorias-de-productos, .grid-tienda-vivero {
+  background-color: #f3efe0;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
 header {
   text-align: center;
   padding: 20px;
@@ -52,12 +31,21 @@ header {
   width: 150px;
   max-width: 100%;
   height: auto;
-  border-radius: 100px;
-  display: block;
-  margin: 0 auto;
 }
 
-/* Menú de navegación */
+footer {
+  background-color: #6b8e23;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 0.5rem;
+}
+
 .menu-navegacion {
   background-color: #f3efe0;
   padding: 1rem 0;
@@ -81,6 +69,40 @@ header {
   font-weight: bold;
 }
 
+/*  Fuente */
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif !important;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Reset y tipografía general */
+.body-vivero {
+  font-family: "DM Serif Text", serif !important;
+  color: #333333;
+  background-color: #f3efe0;
+  margin: 0;
+}
+
+/* Títulos generales */
+.index-titulo-vivero {
+  margin: 0.5rem 0;
+}
+
+/* Títulos de secciones específicas */
+.plantas-de-estacion h2.titulo-vivero,
+.categorias-de-productos h2.titulo-vivero,
+.info-medios-de-pago h2.titulo-vivero {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 /* Sección envíos, medios de pago y seguridad */
 .info-medios-de-pago {
   display: grid;
@@ -100,9 +122,6 @@ header {
   width: 100%;
   max-width: 125px;
   height: auto;
-  border-radius: 100px;
-  display: block;
-  margin: 0 auto 1rem;
 }
 
 /* Categorías de productos */
@@ -110,10 +129,6 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
-  margin: 2rem auto;
-  background-color: #f3efe0;
-  max-width: 1200px;
-  padding: 2rem;
 }
 
 .categorias-de-productos article {
@@ -214,29 +229,11 @@ header {
   display: inline-block;
 }
 
-/* Footer */
-footer {
-  background-color: #6b8e23;
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-footer a {
-  text-decoration: none;
-  color: #ffffff;
-  margin: 0 0.5rem;
-}
-
 /* Página Tienda */
 .grid-tienda-vivero {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  margin: 2rem auto;
-  background-color: #f3efe0;
-  max-width: 1200px;
-  padding: 2rem;
 }
 
 .grid-tienda-vivero img {
@@ -429,18 +426,18 @@ footer a {
 
 /* Página Contacto */
 .btn-contacto {
-  background: #6b8e23, #557c4a;
-  color: #fff;
+  background-color: #6b8e23;
+  color: #ffffff;
   padding: 0.7rem 2rem;
   border: none;
   border-radius: 8px;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background-color 0.2s;
 }
 
 .btn-contacto:hover {
-  background: #3e5c34;
+  background-color: #3e5c34;
 }
 
 .seccion-contacto {
@@ -480,33 +477,6 @@ footer a {
   font-size: 2rem;
   margin: 1rem 0 2rem 0;
   border-radius: 10px;
-}
-
-/*media querys*/
-@media (max-width: 900px) {
-  .grid-tienda-vivero {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  .mosaico-envios {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .grid-tienda-vivero,
-  .mosaico-envios,
-  .imagenes-envios-vivero {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-  .grid-tienda-vivero img,
-  .imagenes-envios-vivero img {
-    width: 100px;
-    height: 100px;
-  }
-  .mosaico-item img {
-    height: 120px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

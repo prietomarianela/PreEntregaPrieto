@@ -1,0 +1,21 @@
+ @use "../utilities/variablesColor" as v;
+ %titulo-vivero {
+  font-family: "DM Serif Text", serif !important;
+  color: v.$verde-oscuro;
+  text-align: center;
+  border-radius: 10px;
+}
+
+%img-redonda {
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+%seccion-fondo {
+  background-color: v.$beige-claro;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 2rem auto;
+}

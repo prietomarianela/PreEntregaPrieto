@@ -1,12 +1,11 @@
 
-  /* Paleta Principal */ /* Variables */
-  $verde-hoja: #6b8e23;
-  $verde-oscuro: #2f4f2f;
-  $verde-suave: #a9cbb7;
-  $beige-claro: #f3efe0;
-  $marron-tierra: #8b5e3c;
-  $blanco-puro: #ffffff;
-  $negro-texto: #333333;
+@use "./layout/_header.scss";
+@use "./layout/_footer.scss";
+@use "./layout/_navigation.scss";
+@use "./mq/_mq.scss" ;
+@use "./utilities/variablesColor.scss" ;
+@use "./utilities/mixins.scss";
+@use "./utilities/extends.scss";
 
 /*  Fuente */
 .dm-serif-text-regular {
@@ -24,66 +23,24 @@
 /* Reset y tipografía general */
 .body-vivero {
   font-family: "DM Serif Text", serif !important;
-  color: $negro-texto;
-  background-color: $beige-claro;
+  color: variablesColor.$negro-texto;
+  background-color: variablesColor.$beige-claro;
   margin: 0;
 }
 
 /* Títulos generales */
 .index-titulo-vivero {
-    font-family: "DM Serif Text", serif !important;
-  color: $verde-oscuro;
-  text-align: center;
+@extend %titulo-vivero;
   margin: 0.5rem 0;
-  border-radius: 10px;
 }
 
 /* Títulos de secciones específicas */
 .plantas-de-estacion h2.titulo-vivero,
 .categorias-de-productos h2.titulo-vivero,
 .info-medios-de-pago h2.titulo-vivero {
-font-family: "DM Serif Text", serif;
-  color: $verde-oscuro;
+  @extend %titulo-vivero;
   font-size: 2rem;
-  text-align: center;
   margin-bottom: 2rem;
-  border-radius: 10px;
-}
-
-/* Header y logo */
-header {
-  text-align: center;
-  padding: 20px;
-}
-.logo-vivero-verde {
-  width: 150px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 100px;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Menú de navegación */
-.menu-navegacion {
-  background-color: $beige-claro;
-  padding: 1rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-.menu-navegacion ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 0.5rem;
-  justify-items: center;
-  list-style: none;
-  max-width: 600px;
-  padding: 0;
-  margin: 0 auto;
-}
-.menu-navegacion a {
-  text-decoration: none;
-  color: $verde-hoja;
-  font-weight: bold;
 }
 
 /* Sección envíos, medios de pago y seguridad */
@@ -92,7 +49,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
   margin: 2rem auto;
-  background-color: $verde-suave;
+  background-color: variablesColor.$verde-suave;
   max-width: 1200px;
   padding: 2rem;
 }
@@ -100,23 +57,18 @@ header {
   text-align: center;
 }
 .info-medios-de-pago img {
+  @extend %img-redonda;
   width: 100%;
   max-width: 125px;
   height: auto;
-  border-radius: 100px;
-  display: block;
-  margin: 0 auto 1rem;
 }
 
 /* Categorías de productos */
 .categorias-de-productos {
+    @extend %seccion-fondo;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
-  margin: 2rem auto;
-  background-color: $beige-claro;
-  max-width: 1200px;
-  padding: 2rem;
 }
 .categorias-de-productos article {
   text-align: center;
@@ -134,7 +86,7 @@ header {
 /* Sección de plantas de estación */
 .plantas-de-estacion {
   padding: 2rem;
-  background-color: $verde-suave;
+  background-color: variablesColor.$verde-suave;
   max-width: 1200px;
   margin: 2rem auto;
 }
@@ -165,7 +117,7 @@ header {
   transition: all 0.3s ease;
 }
 .plantas-de-estacion p {
-  color: $negro-texto;
+  color: variablesColor.$negro-texto;
   font-weight: bold;
   margin-top: 0;
 }
@@ -191,7 +143,7 @@ header {
 
 .titulo-carrusel {
   font-family: "DM Serif Text", serif;
-  color: $verde-oscuro;
+  color: variablesColor.$verde-oscuro;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.7);
@@ -202,7 +154,7 @@ header {
 
 .texto-carrusel {
   font-family: "DM Serif Text", serif;
-  color: $verde-hoja;
+  color: variablesColor.$verde-hoja;
   font-size: 1.2rem;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 0.25rem 0.5rem;
@@ -210,18 +162,6 @@ header {
   display: inline-block;
 }
 
-/* Footer */
-footer {
-  background-color: $verde-hoja;
-  color: $blanco-puro;
-  text-align: center;
-  padding: 1rem 0;
-}
-footer a {
-  text-decoration: none;
-  color: $blanco-puro;
-  margin: 0 0.5rem;
-}
 
 /* Página Tienda */
 
@@ -229,10 +169,7 @@ footer a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  margin: 2rem auto;
-  background-color: $beige-claro;
-  max-width: 1200px;
-  padding: 2rem;
+  @extend %seccion-fondo;
 }
 
 .grid-tienda-vivero img {
@@ -247,7 +184,7 @@ footer a {
 .grid-tienda-vivero p {
   text-align: center;
   font-size: 1.2rem;
-  color: $negro-texto;
+  color: variablesColor.$negro-texto;
 }
 
 .grid-tienda-vivero article {
@@ -261,8 +198,8 @@ footer a {
   transform: scale(1.05);
 }
 .grid-tienda-vivero button {
-  background-color: $verde-hoja;
-  color: $blanco-puro;
+  background-color: variablesColor.$verde-hoja;
+  color: variablesColor.$blanco-puro;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -271,12 +208,12 @@ footer a {
 }
 
 .grid-tienda-vivero button:hover {
-  background-color: $verde-oscuro;
+  background-color: variablesColor.$verde-oscuro;
 }
 
 .tienda-titulo-vivero {
   text-align: center;
-  color: $verde-oscuro;
+  color: variablesColor.$verde-oscuro;
   font-size: 2rem;
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -288,7 +225,7 @@ footer a {
 
 .titulo-quienes-somos {
   text-align: center;
-  color: $verde-oscuro;
+  color: variablesColor.$verde-oscuro;
   font-size: 2rem;
   margin: 1rem 0 2.5rem 0; /* aumenta el margen inferior */
   border-radius: 10px;
@@ -348,7 +285,7 @@ footer a {
 
 .titulo-carrusel-quienes-somos {
   font-family: "DM Serif Text", serif;
-  color: $blanco-puro;
+  color: variablesColor.$blanco-puro;
   font-size: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: rgba(85, 124, 74, 0.7);
@@ -362,14 +299,14 @@ footer a {
 
 .titulos-envios {
   text-align: center;
-  color: $verde-oscuro;
+  color: variablesColor.$verde-oscuro;
   font-size: 2rem;
   margin: 1rem 0 2rem 0; 
   border-radius: 10px;
 }
 
 .parrafos-envios {
-   max-width: 800px;
+  max-width: 800px;
   margin: 2rem auto;
   padding: 0.5rem;
   border-radius: 10px;
@@ -383,18 +320,18 @@ footer a {
   max-width: 500px;
   margin: 1.5rem auto;
   border-collapse: collapse;
-  background: $beige-claro;
+  background: variablesColor.$beige-claro;
   border-radius: 10px;
   font-size: 1rem;
 }
 .tabla-envios th, .tabla-envios td {
-  border: 1px solid $marron-tierra;
+  border: 1px solid variablesColor.$marron-tierra;
   padding: 0.5rem 1rem;
   text-align: center;
 }
 .tabla-envios th {
-  background: $verde-suave;
-  color: $verde-oscuro;
+  background: variablesColor.$verde-suave;
+  color: variablesColor.$verde-oscuro;
 }
 
 .imagenes-envios-vivero {
@@ -425,25 +362,20 @@ footer a {
 /* Página Contacto */
 
 .btn-contacto {
-  background: $verde-hoja, #557c4a;
-  color: #fff;
-  padding: 0.7rem 2rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background 0.2s;
+  @include mixins.boton-vivero;
 }
+
+
 .btn-contacto:hover {
-  background: #3e5c34;
+  background-color: #3e5c34;
 }
 .seccion-contacto {
   max-width: 500px;
   margin: 2rem auto;
-  background: $beige-claro, #f8f8f3;
+  background: #f3efe0, #f8f8f3;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 .seccion-contacto input,
 .seccion-contacto textarea {
@@ -467,36 +399,8 @@ footer a {
 
 .titulo-contacto {
   text-align: center;
-  color: $verde-oscuro;
+  color: variablesColor.$verde-oscuro;
   font-size: 2rem;
   margin: 1rem 0 2rem 0; 
   border-radius: 10px;
-}
-
-/*media querys*/
-@media (max-width: 900px) {
-  .grid-tienda-vivero {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  .mosaico-envios {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .grid-tienda-vivero,
-  .mosaico-envios,
-  .imagenes-envios-vivero {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-  .grid-tienda-vivero img,
-  .imagenes-envios-vivero img {
-    width: 100px;
-    height: 100px;
-  }
-  .mosaico-item img {
-    height: 120px;
-  }
 }
