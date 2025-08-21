@@ -1,0 +1,11 @@
+@use "../utilities/extends.scss";
+header {
+  text-align: center;
+  padding: 20px;
+}
+.logo-vivero-verde {
+    @extend %img-redonda;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}

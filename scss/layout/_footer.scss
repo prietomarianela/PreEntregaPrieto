@@ -1,0 +1,12 @@
+@use "../utilities/variablesColor" as v;
+footer {
+  background-color: v.$verde-hoja;
+  color: v.$blanco-puro;
+  text-align: center;
+  padding: 1rem 0;
+}
+footer a {
+  text-decoration: none;
+  color: v.$blanco-puro;
+  margin: 0 0.5rem;
+}
