@@ -7,13 +7,22 @@
 @use "./utilities/mixins.scss";
 @use "./utilities/extends.scss";
 
+@include mixins.mq(600px) {
+  .tabla-envios {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+}
+
 /*  Fuente */
 .dm-serif-text-regular {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .dm-serif-text-regular-italic {
   font-family: "DM Serif Text", serif !important;
   font-weight: 400;
@@ -165,6 +174,24 @@
 
 /* Página Tienda */
 
+@include mixins.mq(900px) {
+  main .grid-tienda-vivero {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@include mixins.mq(600px) {
+  main .grid-tienda-vivero {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  main .grid-tienda-vivero img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .grid-tienda-vivero {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -255,6 +282,7 @@
 
 .mosaico-item:hover img {
   transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
 
 .mosaico-texto {
@@ -308,7 +336,7 @@
 .parrafos-envios {
   max-width: 800px;
   margin: 2rem auto;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 10px;
   font-size: 1rem;
   line-height: 1.6;
@@ -323,15 +351,20 @@
   background: variablesColor.$beige-claro;
   border-radius: 10px;
   font-size: 1rem;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+  border: 2px solid variablesColor.$marron-tierra;
 }
-.tabla-envios th, .tabla-envios td {
+
+.tabla-envios th,
+.tabla-envios td {
   border: 1px solid variablesColor.$marron-tierra;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   text-align: center;
 }
+
 .tabla-envios th {
   background: variablesColor.$verde-suave;
-  color: variablesColor.$verde-oscuro;
 }
 
 .imagenes-envios-vivero {
@@ -361,24 +394,40 @@
 
 /* Página Contacto */
 
+.seccion-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion-contacto form button {
+  align-self: center;
+}
+
 .btn-contacto {
   @include mixins.boton-vivero;
+  box-sizing: border-box;
+  .parrafos-envios {
+    max-width: 800px;
+    text-align: justify;
+    margin: 2rem auto;
+    padding: 0.5rem 1.5rem;
+  }
 }
-
-
-.btn-contacto:hover {
-  background-color: #3e5c34;
-}
-.seccion-contacto {
-  max-width: 500px;
-  margin: 2rem auto;
-  background: #f3efe0, #f8f8f3;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+.contenedor-envios {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+    margin: 2rem auto;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 .seccion-contacto input,
 .seccion-contacto textarea {
+  .contenedor-envios {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.3rem;
@@ -391,6 +440,24 @@
   min-height: 80px;
   resize: vertical;
 }
+
+.seccion-contacto {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@include mixins.mq(600px) {
+  .seccion-contacto {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .seccion-contacto input,
+  .seccion-contacto textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 .mapa-contacto {
   max-width: 700px;
   margin: 2rem auto;
