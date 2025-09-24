@@ -1,0 +1,19 @@
+
+@use "../utilities/variablesColor" as v;
+
+@mixin boton-vivero($bg: v.$verde-hoja, $color: v.$blanco-puro, $radius: 8px) {
+  background-color: $bg;
+  color: $color;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: $radius;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+@mixin mq($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}

@@ -1,0 +1,22 @@
+@use "../utilities/variablesColor" as v;
+.menu-navegacion {
+  background-color: v.$beige-claro;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.menu-navegacion ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
+  justify-items: center;
+  list-style: none;
+  max-width: 600px;
+  padding: 0;
+  margin: 0 auto;
+}
+.menu-navegacion a {
+  text-decoration: none;
+  color: v.$verde-hoja;
+  font-weight: bold;
+}
+
