@@ -45,72 +45,14 @@
     <main>
        <section class="tienda-vivero">
       <h2 class= "tienda-titulo-vivero">Tienda</h2>
-      <div class="grid-tienda-vivero">
-        <article>
-          <h3 class= "titulos-plantas">AVE DEL PARAISO</h3>
-          <img
-            src="../img/ave-del-paraiso.webp"
-            alt="planta ave del paraiso"
-            class="imagen-hover"
-          />
-          <p></p>$44.999</p>
-
-          <button>Agregar al Carrito</button>
-        </article>
-        <article>
-          <h3 class= "titulos-plantas">PINO BUDISTA</h3>
-          <img
-            src="../img/pino-budista.webp"
-            alt="planta pino budista"
-            class="imagen-hover"
-          />
-          <p>$58.999</p>
-
-          <button>Agregar al Carrito</button>
-        </article>
-        <article>
-          <h3 class= "titulos-plantas">ARBUSTO FICUS AUDREY</h3>
-          <img
-            src="../img/arbusto-ficus-audrey.webp"
-            alt="arbusto ficus audrey"
-            class="imagen-hover"
-          />
-          <p>$41.999</p>
-          <button>Agregar al Carrito</button>
-        </article>
-
-        <article>
-          <h3 class= "titulos-plantas">SUCULENTA</h3>
-          <img
-            src="../img/suculenta-tienda.jpg"
-            alt="planta suculenta"
-            class="imagen-hover"
-          />
-          <p>$65.999</p>
-          <button>Agregar al Carrito</button>
-        </article>
-            <article>
-          <h3 class= "titulos-plantas">ARECA</h3>
-          <img
-            src="../img/areca-tienda.jpg"
-            alt="planta areca"
-            class="imagen-hover"
-          />
-          <p>$65.999</p>
-          <button>Agregar al Carrito</button>
-        </article>
-            <article>
-          <h3 class= "titulos-plantas">MONSTERA</h3>
-          <img
-            src="../img/monstera-tienda.jpg"
-            alt="planta monstera"
-            class="imagen-hover"
-          />
-          <p>$65.999</p>
-          <button>Agregar al Carrito</button>
-        </article>
-              </div>
+      <div class="grid-tienda-vivero" id="plantas-container">
+      </div>
         </section>
+<section class="carrito-vivero">
+  <h2>Carrito de compras</h2>
+  <div id="carrito-container"></div>
+  <p id="total-carrito">Total: $0</p>
+</section>        
     </main>
    <!-- Footer con información de derechos y contactos -->
     <footer>
@@ -123,5 +65,6 @@
         <a href="mailto:contacto@viveroverde.com">Email</a>
       </p>
     </footer>
+    <script src="../script.js"></script>
   </body>
 </html>
