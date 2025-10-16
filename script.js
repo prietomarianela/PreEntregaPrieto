@@ -9,10 +9,14 @@ function Planta(nombre, precio, imagen) {
 const plantas = [
   new Planta("Monstera", 30000, "monstera-tienda.jpg"),
   new Planta("Ficus", 25000, "arbusto-ficus-audrey.webp"),
-  new Planta("Cactus", 15000, "suculenta-tienda.jpg"),
+  new Planta("Cactus", 15000, "cactus.jpg"),
   new Planta("Helecho", 20000, "areca-tienda.jpg"),
   new Planta("Palma", 35000, "ave-del-paraiso.webp"),
-  new Planta("Suculenta", 18000, "suculenta-tienda.jpg")  // planta agregada
+  new Planta("Suculenta", 18000, "suculenta-tienda.jpg"),  
+  new Planta("Aloe Vera", 17000, "aloe-vera.jpeg"),
+  new Planta("Bambú", 22000, "bambu.jpg"),
+  new Planta("Lavanda", 21000, "lavanda.jpeg"),
+  new Planta("Orquídea", 40000, "orquidea.jpg")
 ];
 
 // Variables para manejar el carrito de compras
