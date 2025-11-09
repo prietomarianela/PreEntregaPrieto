@@ -9,49 +9,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-</head>
+  </head>
   <body class="body-vivero">
-     <!-- Logo y nombre -->
-    <header>
-      <img
-        src="../img/vivero-verde.png"
-        alt="logo vivero verde"
-        class="logo-vivero-verde"
-      />
+<!-- Logo, nombre y mini carrito -->
+<header>
+  <!-- Logo y nombre -->
+  <img
+    src="/img/vivero-verde.png"
+    alt="logo vivero verde"
+    class="logo-vivero-verde"
+  />
 
-      <h1 class= "titulo-vivero-tienda">Vivero Verde</h1>
-      <p>Encontrá la planta perfecta para tu hogar.</p>
-<!-- Menú de navegación -->
-      <nav class="menu-navegacion">
-        <ul>
-          <li>
-            <a href="../index.html">Inicio</a>
-          </li>
-          <li><a href="tienda.html">Tienda</a></li>
-          <li><a href="quienes-somos.html">Quiénes somos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="envios.html">Envios</a></li>
-        </ul>
-      </nav>
-    </header>
+  <h1 class="titulo-vivero-tienda">Vivero Verde</h1>
+  <p>Encontrá la planta perfecta para tu hogar.</p>
+
+  <!-- Menú de navegación -->
+  <nav class="menu-navegacion">
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="/pages/tienda.html">Tienda</a></li>
+      <li><a href="/pages/quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="/pages/contacto.html">Contacto</a></li>
+      <li><a href="/pages/envios.html">Envios</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mini carrito -->
+  <div class="mini-carrito">
+    <h4>Carrito</h4>
+    <div id="carrito-container"></div>
+    <p id="total-carrito">Total: $0</p>
+  </div>
+</header>
+
     <!--Sección de plantas-->
     <main>
        <section class="tienda-vivero">
       <h2 class= "tienda-titulo-vivero">Tienda</h2>
       <div class="grid-tienda-vivero" id="plantas-container">
       </div>
-        </section>
-<section class="carrito-vivero">
-  <h2>Carrito de compras</h2>
-  <div id="carrito-container"></div>
-  <p id="total-carrito">Total: $0</p>
-</section>        
+        </section>      
     </main>
    <!-- Footer con información de derechos y contactos -->
     <footer>
@@ -64,6 +61,7 @@
         <a href="mailto:contacto@viveroverde.com">Email</a>
       </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../script.js"></script>
   </body>
 </html>

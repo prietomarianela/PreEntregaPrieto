@@ -69,6 +69,9 @@ footer a {
   font-weight: bold;
 }
 
+/* ===========================
+   Media queries generales
+=========================== */
 @media (max-width: 600px) {
   .tabla-envios {
     width: 100%;
@@ -78,7 +81,9 @@ footer a {
     box-sizing: border-box;
   }
 }
-/*  Fuente */
+/* ===========================
+   Tipografía
+=========================== */
 .dm-serif-text-regular {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
@@ -91,7 +96,6 @@ footer a {
   font-style: italic;
 }
 
-/* Reset y tipografía general */
 .body-vivero {
   font-family: "DM Serif Text", serif !important;
   color: #333333;
@@ -99,12 +103,13 @@ footer a {
   margin: 0;
 }
 
-/* Títulos generales */
+/* ===========================
+   Títulos generales
+=========================== */
 .index-titulo-vivero {
   margin: 0.5rem 0;
 }
 
-/* Títulos de secciones específicas */
 .plantas-de-estacion h2.titulo-vivero,
 .categorias-de-productos h2.titulo-vivero,
 .info-medios-de-pago h2.titulo-vivero {
@@ -112,7 +117,9 @@ footer a {
   margin-bottom: 2rem;
 }
 
-/* Sección envíos, medios de pago y seguridad */
+/* ===========================
+   Sección envíos, medios de pago y seguridad
+=========================== */
 .info-medios-de-pago {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -122,28 +129,26 @@ footer a {
   max-width: 1200px;
   padding: 2rem;
 }
-
 .info-medios-de-pago article {
   text-align: center;
 }
-
 .info-medios-de-pago img {
   width: 100%;
   max-width: 125px;
   height: auto;
 }
 
-/* Categorías de productos */
+/* ===========================
+   Categorías de productos
+=========================== */
 .categorias-de-productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
 }
-
 .categorias-de-productos article {
   text-align: center;
 }
-
 .categorias-de-productos img {
   width: 100%;
   max-width: 150px;
@@ -153,30 +158,29 @@ footer a {
   margin: 0 auto;
 }
 
-/* Sección de plantas de estación */
+/* ===========================
+   Sección de plantas de estación
+=========================== */
 .plantas-de-estacion {
   padding: 2rem;
   background-color: #a9cbb7;
   max-width: 1200px;
   margin: 2rem auto;
 }
-
-.grid-plantas {
+.plantas-de-estacion .grid-plantas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   align-items: stretch;
 }
-
-.grid-plantas article {
+.plantas-de-estacion .grid-plantas article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 350px;
   text-align: center;
 }
-
-.grid-plantas img {
+.plantas-de-estacion .grid-plantas article img {
   width: 180px;
   height: 180px;
   object-fit: cover;
@@ -184,40 +188,37 @@ footer a {
   margin: 0 auto 0.5rem;
   border-radius: 20px;
 }
-
-.imagen-hover:hover {
+.plantas-de-estacion .imagen-hover:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-
 .plantas-de-estacion p {
   color: #333333;
   font-weight: bold;
   margin-top: 0;
 }
 
-/* Carrusel */
+/* ===========================
+   Carrusel
+=========================== */
 .carrusel-vivero {
   max-width: 1200px;
   margin: 2rem auto;
 }
-
-.carrusel-img {
+.carrusel-vivero .carrusel-img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
 }
-
-.carousel-caption {
+.carrusel-vivero .carousel-caption {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem; /* espacio entre título y texto */
 }
-
-.titulo-carrusel {
+.carrusel-vivero .titulo-carrusel {
   font-family: "DM Serif Text", serif;
   color: #2f4f2f;
   font-size: 2rem;
@@ -227,8 +228,7 @@ footer a {
   border-radius: 5px;
   display: inline-block;
 }
-
-.texto-carrusel {
+.carrusel-vivero .texto-carrusel {
   font-family: "DM Serif Text", serif;
   color: #6b8e23;
   font-size: 1.2rem;
@@ -238,100 +238,9 @@ footer a {
   display: inline-block;
 }
 
-/* Página Tienda */
-/*.grid-tienda-vivero {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  @extend %seccion-fondo;
-  max-width: 1200px;
-  margin: 2rem auto;
-    gap: 2rem;
-  padding: 2rem;
-
-article {
-  background-color: variablesColor.$blanco-puro;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 420px;
-
-  &:hover {
-    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  }
-}
-img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
-  p {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: variablesColor.$negro-texto;
-    margin: 0.3rem 0 1rem 0;
-  }
-
-  .price {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: variablesColor.$verde-oscuro;
-    margin-bottom: 1rem;
-  }
-
-  button {
-    background-color: variablesColor.$verde-hoja;
-    color: variablesColor.$blanco-puro;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(69, 142, 43, 0.5);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      background-color: variablesColor.$verde-oscuro;
-      box-shadow: 0 6px 14px rgba(43, 91, 15, 0.7);
-    }
-  }
-}
-
-.carrito {
-  max-width: 1200px;
-  margin: 3rem auto; 
-  padding: 0 2rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  justify-content: center; /
-  gap: 1rem;
-
-  & > * {
-    width: 100%;
-    max-width: 600px; 
-  }
-}
-*/
+/* ===========================
+   Página Tienda
+=========================== */
 .grid-tienda-vivero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -387,37 +296,49 @@ img {
   box-shadow: 0 4px 10px rgba(43, 91, 15, 0.4);
 }
 
-.carrito-vivero {
-  background-color: #ffffff;
-  padding: 15px;
-  margin: 2rem auto;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+/* Mini carrito en el header */
+.mini-carrito {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  position: absolute; /* lo podés ajustar según tu header */
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
 }
-.carrito-vivero .item-carrito {
+.mini-carrito h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #2d6a2f;
+}
+.mini-carrito #carrito-container {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 0.5rem;
+}
+.mini-carrito .item-carrito {
   display: flex;
   justify-content: space-between;
-  margin: 5px 0;
+  margin-bottom: 0.4rem;
 }
-.carrito-vivero .item-carrito button {
+.mini-carrito .item-carrito button {
   background-color: #d00000;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 2px 6px;
   cursor: pointer;
+  font-size: 0.8rem;
 }
-.carrito-vivero .item-carrito button:hover {
+.mini-carrito .item-carrito button:hover {
   background-color: #ff4d6d;
 }
-.carrito-vivero #total-carrito {
+.mini-carrito #total-carrito {
   font-weight: bold;
   text-align: right;
-  margin-top: 10px;
+  margin: 0;
 }
 
 .tienda-titulo-vivero {
@@ -427,7 +348,9 @@ img {
   color: #2f4f2f;
 }
 
-/* === Responsividad === */
+/* ===========================
+   Responsividad tienda
+=========================== */
 @media (max-width: 900px) {
   .grid-tienda-vivero {
     grid-template-columns: repeat(2, 1fr);

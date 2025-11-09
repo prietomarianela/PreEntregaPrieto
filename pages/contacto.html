@@ -14,30 +14,37 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body class="body-vivero">
-    <!-- Logo y nombre -->
-    <header>
-      <img
-        src="../img/vivero-verde.png"
-        alt="logo vivero verde"
-        class="logo-vivero-verde"
-      />
+<!-- Logo, nombre y mini carrito -->
+<header>
+  <!-- Logo y nombre -->
+  <img
+    src="/img/vivero-verde.png"
+    alt="logo vivero verde"
+    class="logo-vivero-verde"
+  />
 
-      <h1 class="titulo-vivero">Vivero Verde</h1>
-      <p>Encontrá la planta perfecta para tu hogar.</p>
+  <h1 class="titulo-vivero-tienda">Vivero Verde</h1>
+  <p>Encontrá la planta perfecta para tu hogar.</p>
 
-      <!-- Menú de navegación -->
-      <nav class="menu-navegacion">
-        <ul>
-          <li>
-            <a href="../index.html">Inicio</a>
-          </li>
-          <li><a href="tienda.html">Tienda</a></li>
-          <li><a href="quienes-somos.html">Quiénes somos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="envios.html">Envios</a></li>
-        </ul>
-      </nav>
-    </header>
+  <!-- Menú de navegación -->
+  <nav class="menu-navegacion">
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="/pages/tienda.html">Tienda</a></li>
+      <li><a href="/pages/quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="/pages/contacto.html">Contacto</a></li>
+      <li><a href="/pages/envios.html">Envios</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mini carrito -->
+  <div class="mini-carrito">
+    <h4>Carrito</h4>
+    <div id="carrito-container"></div>
+    <p id="total-carrito">Total: $0</p>
+  </div>
+</header>
+
     <h2 class="titulo-contacto">¡Preguntanos lo que quieras!</h2>
 
     <div class="seccion-contacto">
@@ -101,5 +108,6 @@
         <a href="mailto:contacto@viveroverde.com">Email</a>
       </p>
     </footer>
+        <script src="../script.js"></script>
   </body>
 </html>
