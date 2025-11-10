@@ -18,7 +18,7 @@ let plantas = []; // array para llenar con datos del JSON
 async function cargarPlantas() {
   if (!plantasContainer) return; // si no existe contenedor de tienda, no hago nada
   try {
-    const response = await fetch("plantas.json");
+    const response = await fetch("/plantas.json");
     const data = await response.json();
     plantas = data.map(
       (p) => new Planta(p.nombre, p.precio, p.imagen)
