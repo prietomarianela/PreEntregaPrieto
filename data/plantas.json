@@ -1,6 +1,6 @@
 [
-  { "nombre": "Monstera", "precio": 30000, "imagen": "../img/monstera-tienda.jpg" },
-  { "nombre": "Ficus", "precio": 25000, "imagen": "../img/arbusto-ficus-audrey.webp" },
+  { "nombre": "Monstera", "precio": 30000, "imagen": "/img/monstera-tienda.jpg" },
+  { "nombre": "Ficus", "precio": 25000, "imagen": "/img/arbusto-ficus-audrey.webp" },
   { "nombre": "Cactus", "precio": 15000, "imagen": "../img/cactus.jpg" },
   { "nombre": "Helecho", "precio": 20000, "imagen": "../img/areca-tienda.jpg" },
   { "nombre": "Palma", "precio": 35000, "imagen": "../img/ave-del-paraiso.webp" },
