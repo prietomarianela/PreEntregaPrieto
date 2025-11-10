@@ -1,12 +1,12 @@
 [
-  { "nombre": "Monstera", "precio": 30000, "imagen": "/img/monstera-tienda.jpg" },
-  { "nombre": "Ficus", "precio": 25000, "imagen": "/img/arbusto-ficus-audrey.webp" },
-  { "nombre": "Cactus", "precio": 15000, "imagen": "/img/cactus.jpg" },
-  { "nombre": "Helecho", "precio": 20000, "imagen": "/img/areca-tienda.jpg" },
-  { "nombre": "Palma", "precio": 35000, "imagen": "/img/ave-del-paraiso.webp" },
-  { "nombre": "Suculenta", "precio": 18000, "imagen": "/img/suculenta-tienda.jpg" },  
-  { "nombre": "Aloe Vera", "precio": 17000, "imagen": "/img/aloe-vera.jpeg" },
-  { "nombre": "Bambú", "precio": 22000, "imagen": "/img/bambu.jpg" },
-  { "nombre": "Lavanda", "precio": 21000, "imagen": "/img/lavanda.jpeg" },
-  { "nombre": "Orquídea", "precio": 40000, "imagen": "/img/orquidea.jpg" }
+  { "nombre": "Monstera", "precio": 30000, "imagen": "../img/monstera-tienda.jpg" },
+  { "nombre": "Ficus", "precio": 25000, "imagen": "../img/arbusto-ficus-audrey.webp" },
+  { "nombre": "Cactus", "precio": 15000, "imagen": "../img/cactus.jpg" },
+  { "nombre": "Helecho", "precio": 20000, "imagen": "../img/areca-tienda.jpg" },
+  { "nombre": "Palma", "precio": 35000, "imagen": "../img/ave-del-paraiso.webp" },
+  { "nombre": "Suculenta", "precio": 18000, "imagen": "../img/suculenta-tienda.jpg" },  
+  { "nombre": "Aloe Vera", "precio": 17000, "imagen": "../img/aloe-vera.jpeg" },
+  { "nombre": "Bambú", "precio": 22000, "imagen": "../img/bambu.jpg" },
+  { "nombre": "Lavanda", "precio": 21000, "imagen": "../img/lavanda.jpeg" },
+  { "nombre": "Orquídea", "precio": 40000, "imagen": "../img/orquidea.jpg" }
 ]
